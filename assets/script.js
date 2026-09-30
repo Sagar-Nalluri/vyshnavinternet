@@ -1,1 +1,1 @@
-
+const menuBtn=document.getElementById("menuBtn");const nav=document.querySelector(".nav");menuBtn.addEventListener("click",()=>nav.classList.toggle("open"));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const id=a.getAttribute("href");if(id!="#"&&document.querySelector(id)){e.preventDefault();document.querySelector(id).scrollIntoView({behavior:"smooth"});}}));
